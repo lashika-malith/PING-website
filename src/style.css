@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+   
+
+body{
+    background-color: white;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 25px;
+
+}
+
+.logo{
+    color:  hsl(209, 33%, 12%);
+    font-size: 0.7em;
+    margin-top: 100px;
+
+}
+
+.logo .stop{
+    color: hsl(223, 87%, 63%);
+}
+
+.tittle h1{
+    color:  hsl(0, 0%, 59%);
+    font-weight: 300;
+    margin-bottom: 0;
+  
+
+}
+
+.tittle span{
+    color:  hsl(209, 33%, 12%);
+    font-weight: 700;
+}
+
+.para{
+    font-weight: 300;
+    color: black;
+    font-size: 0.8em;
+    margin-top: -5px;
+}
+.form{
+    margin-top: 70px;
+    width: 100%;
+
+
+}
+form{
+ 
+        display: flex;
+    flex-direction: row;
+         justify-content: center;
+
+}
+form div{
+    width: 30%;
+    text-align: center;
+}
+.form form input{
+    border-radius: 50px;
+    border: 0.9px solid  hsl(0, 0%, 59%);
+    width: 80%;
+    height: 20px;
+    outline: none;
+    padding: 18px 35px;
+    font-size: 0.65em;
+    background-color: white;
+     color:  hsl(209, 33%, 12%);
+     opacity: 0.7;
+}
+
+.form button{
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+        font-size: 0.8em;
+    margin-left: 15px;
+    padding: 17px 60px;
+    height: 50%;
+}
+
+.photo img{
+    width: 50%;
+    margin-top: 80px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.contact .social{
+
+    border-radius: 50px;
+    border: 1px solid hsl(0, 0%, 59%);
+    padding: 10px;
+    margin-top: 80px;
+    fill:hsl(223, 87%, 63%) ;
+}
+
+.contact a:not(:nth-of-type(1)){
+    margin-left: 30px;
+}
+
+.copyright{
+    font-size: 0.7em;
+color:  hsl(0, 0%, 59%);
+}
+
+
+footer{
+    display: none;
+}
+
+
+.contact .social:hover{
+    background-color:hsl(223, 87%, 63%) ;
+    fill:white ;
+    border: 1px solid white;
+
+}
+
+.error{
+    color: red;
+    font-size: 0.55em;
+    text-align: left;
+        visibility: hidden;
+        width: 50%;
+        margin-left: 2em;
+
+}
+
+.errorclose{
+    visibility: visible !important;
+}
+
+.redline{
+        border: 0.9px solid red !important;
+
+}
+
+@media screen and (max-width: 950px) {
+        form{
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+        }
+
+        form div{
+            width: 80%;
+        }
+       
+        .tittle h1{
+            font-size: 8vw;
+        }
+        input{
+            width: 95% !important;
+            padding: 0 !important;
+            padding-left: 5% !important;
+            height: 56px !important;  
+                border: 0.9px solid hsl(223, 87%, 63%) !important;
+      
+        }
+        input::placeholder{
+            margin: 10px 30px ;
+        }
+        button{
+            width: 80% !important;
+            margin-left: 0 !important;
+            margin-top: 25px;
+        }
+        .photo img{
+            width: 75%;
+        }
+        .error{
+            visibility: visible;
+            display: none;
+            width: 80%;
+        }
+
+        .errorclose{
+            display: block;
+        }
+
+        .contact, .copyright{
+            zoom: 75%;
+        }
+
+    }
